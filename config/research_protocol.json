@@ -1,0 +1,11 @@
+{
+  "seed": 42,
+  "observations": 900,
+  "assumptions": {"fee_bps_per_side": 2.0, "slippage_bps_per_side": 3.0, "reference_stop_fraction": 0.01},
+  "min_trades_per_partition": 50,
+  "proposals": [
+    {"fast": 5, "slow": 20, "hypothesis": "A short-term momentum signal may persist in some synthetic regimes."},
+    {"fast": 10, "slow": 35, "hypothesis": "A slower trend measure may be more resilient to noisy synthetic periods."},
+    {"fast": 20, "slow": 50, "hypothesis": "Longer windows may reduce signal turnover in synthetic price sequences."}
+  ]
+}
